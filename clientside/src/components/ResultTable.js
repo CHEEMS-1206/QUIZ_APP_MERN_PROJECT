@@ -9,7 +9,7 @@ export default function ResultTable() {
         getServerData(`${process.env.REACT_APP_SERVER_HOSTNAME}/api/result`, (res) => {
             setData(res)
         })
-    })
+    },[])
 
   return (
     <div>
